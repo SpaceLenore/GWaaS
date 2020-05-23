@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>GWAAS: DEMO</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <div class="wrap">
+            <h1>GWAAS Demo</h1>
+            <p>
+                Click one of the buttons to try the API.
+            </p>
+            <p>
+                <input id="grunt" type="button" name="grunt" value="Leif GW: Grunt">
+                <input id="aaa" type="button" name="aaa" value="Leif GW: aaa">
+            </p>
+        </div>
+        <script type="text/javascript">
+            document.querySelector("#grunt").addEventListener("click", () => {
+                let audio = new Audio('/api/v1/grunt');
+                audio.play();
+            });
+            document.querySelector("#aaa").addEventListener("click", () => {
+                let audio = new Audio('/api/v1/aaa');
+                audio.play();
+            });
+        </script>
+    </body>
+</html>

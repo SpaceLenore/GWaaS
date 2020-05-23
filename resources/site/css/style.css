@@ -1,0 +1,37 @@
+html, body {
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    width: 60%;
+    margin: auto;
+    padding-top: 1rem;
+}
+
+.wrap h1 {
+    font-weight: 300;
+    font-family: monospace;
+}
+
+.wrap p {
+    line-height: 2rem;
+}
+
+.get-badge {
+    margin-right: 5px;
+    padding: 5px;
+    font-family: monospace;
+    font-weight: bold;
+    border-radius: 3px;
+    color: #fff;
+    background: green;
+}
+
+.route {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 1rem;
+}
