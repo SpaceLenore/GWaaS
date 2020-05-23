@@ -36,5 +36,9 @@ func main() {
 		c.SendFile("./resources/gw/aaa/" + strconv.Itoa(aaaID) + ".ogg")
 	})
 
+	v1.Get("/skumbanan", func(c *fiber.Ctx) {
+		c.SendFile("./resources/gw/quotes/skumbanan.ogg")
+	})
+
 	app.Listen(3000)
 }
